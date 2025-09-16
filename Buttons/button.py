@@ -9,6 +9,8 @@ def click():
 
 window = Tk()
 
+photo = PhotoImage(file='like.png')
+
 button = Button(window,
                 text="CLICK ME!",
                 command=click,
@@ -17,7 +19,8 @@ button = Button(window,
                 bg="black",
                 activeforeground="#00FF00",
                 activebackground="black",
-                state=ACTIVE)
+                state=ACTIVE,
+                image=photo)
 
 button.pack()
 window.mainloop()
