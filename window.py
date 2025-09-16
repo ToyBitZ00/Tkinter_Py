@@ -5,10 +5,12 @@ window.geometry("420x420")
 window.title("My First GUI Program")
 icon = PhotoImage(file='App Icon.png')
 window.iconphoto(True, icon)
-window.config(background="black")  # You can use RGB or Hex Code
+window.config(background="cyan")  # You can use RGB or Hex Code
 
 # label = an area widget that holds text and/or an image within a window
 label = Label(window, text="Hello World")
 label.pack()
+# label.place(x=100, y=100)
+
 
 window.mainloop()  # Place window on the screen.
