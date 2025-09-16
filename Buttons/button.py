@@ -16,7 +16,8 @@ button = Button(window,
                 fg="#00FF00",
                 bg="black",
                 activeforeground="#00FF00",
-                activebackground="black")
+                activebackground="black",
+                state=ACTIVE)
 
 button.pack()
 window.mainloop()
