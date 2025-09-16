@@ -2,9 +2,13 @@ from tkinter import *
 
 # button = you click it, then it does stuff
 
+count = 0
+
 
 def click():
-    print("You clicked the button")
+    global count
+    count += 1
+    print("You Clicked", count, "times")
 
 
 window = Tk()
@@ -20,7 +24,8 @@ button = Button(window,
                 activeforeground="#00FF00",
                 activebackground="black",
                 state=ACTIVE,
-                image=photo)
+                image=photo,
+                compound='top')
 
 button.pack()
 window.mainloop()
