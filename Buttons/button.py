@@ -10,10 +10,11 @@ def click():
 window = Tk()
 
 button = Button(window,
-                text="Click me!",
+                text="CLICK ME!",
                 command=click,
                 font=("Comic Sans", 30),
-                fg="#00FF00")
+                fg="#00FF00",
+                bg="black")
 
 button.pack()
 window.mainloop()
