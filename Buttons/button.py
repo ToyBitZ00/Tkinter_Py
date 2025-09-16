@@ -11,7 +11,9 @@ window = Tk()
 
 button = Button(window,
                 text="Click me!",
-                command=click)
+                command=click,
+                font=("Comic Sans", 30),
+                fg="#00FF00")
 
 button.pack()
 window.mainloop()
