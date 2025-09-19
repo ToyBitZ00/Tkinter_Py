@@ -9,11 +9,19 @@ def display():
 
 
 window = Tk()
+window.config(bg='black')
 # window.geometry("200x50")
 # x = StringVar()
 x = IntVar()
 
-python_logo = PhotoImage(file="python_logo.png")
+python_logo = PhotoImage(file='python_logo.png')
+
+label = Label(window,
+              text="CHECK BUTTON",
+              font=('Comic Sans', 40),
+              fg='#00FF00',
+              bg='black')
+label.pack(side=TOP)
 
 check_button = Checkbutton(window,
                            text="I agree to something",
