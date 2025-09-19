@@ -16,7 +16,7 @@ def delete():
 
 
 def backspace():
-    entry_button.delete(len(entry.get())-1, END)
+    entry_button.delete(len(entry_button.get())-1, END)
 
 
 window = Tk()
@@ -50,11 +50,11 @@ delete_button = Button(window,
 delete_button.pack(side=TOP)
 
 bakcspace_button = Button(window,
-                          text="Delete",
+                          text="Backspace",
                           font=('Arial', 20),
                           fg='#00FF00',
                           bg='black',
-                          command=delete)
+                          command=backspace)
 bakcspace_button.pack(side=TOP)
 
 check_button = Checkbutton(window,
