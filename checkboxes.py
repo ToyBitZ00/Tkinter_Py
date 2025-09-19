@@ -23,6 +23,11 @@ label = Label(window,
               bg='black')
 label.pack(side=TOP)
 
+entry_button = Entry(window,
+                     font=('Comic Sans', 30),
+                     fg='#00FF00',
+                     bg='gray')
+entry_button.pack(side=BOTTOM)
 check_button = Checkbutton(window,
                            text="I agree to something",
                            variable=x,
