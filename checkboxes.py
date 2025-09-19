@@ -13,6 +13,8 @@ window = Tk()
 # x = StringVar()
 x = IntVar()
 
+python_logo = PhotoImage(file="python_logo.png")
+
 check_button = Checkbutton(window,
                            text="I agree to something",
                            variable=x,
@@ -25,6 +27,8 @@ check_button = Checkbutton(window,
                            activeforeground='#00FF00',
                            activebackground='black',
                            padx=25,
-                           pady=10)
+                           pady=10,
+                           image=python_logo,
+                           compound="left")
 check_button.pack()
 window.mainloop()
