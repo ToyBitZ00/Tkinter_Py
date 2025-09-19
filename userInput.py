@@ -21,9 +21,10 @@ window.title("Entry Box Program")
 entry = Entry(window,
               font=("Arial", 50),
               bg="black",
-              fg="#00FF00")
+              fg="#00FF00",
+              show="*")
 entry.pack(side=LEFT)
-entry.insert(0, "Spongebob")
+# entry.insert(0, "Spongebob")
 
 submit_button = Button(window, text="Submit", command=submit)
 submit_button.pack(side=RIGHT)
