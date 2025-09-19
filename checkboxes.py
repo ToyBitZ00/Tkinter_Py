@@ -2,14 +2,26 @@ from tkinter import *
 
 
 def display():
+    username = entry_button.get()
+    print("Hello", username)
+
     if (x.get() == 1):
         print("You agree!")
     else:
         print("You don't agree!")
 
 
+def delete():
+    entry_button.delete(0, END)
+
+
+def backspace():
+    entry_button.delete(len(entry.get())-1, END)
+
+
 window = Tk()
 window.config(bg='black')
+window.title("CheckBox with User Input")
 # window.geometry("200x50")
 # x = StringVar()
 x = IntVar()
@@ -27,7 +39,24 @@ entry_button = Entry(window,
                      font=('Comic Sans', 30),
                      fg='#00FF00',
                      bg='gray')
-entry_button.pack(side=BOTTOM)
+entry_button.pack(side=TOP)
+
+delete_button = Button(window,
+                       text="Delete",
+                       font=('Arial', 20),
+                       fg='#00FF00',
+                       bg='black',
+                       command=delete)
+delete_button.pack(side=TOP)
+
+bakcspace_button = Button(window,
+                          text="Delete",
+                          font=('Arial', 20),
+                          fg='#00FF00',
+                          bg='black',
+                          command=delete)
+bakcspace_button.pack(side=TOP)
+
 check_button = Checkbutton(window,
                            text="I agree to something",
                            variable=x,
