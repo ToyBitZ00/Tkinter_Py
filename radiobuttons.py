@@ -38,5 +38,4 @@ for index in range(len(food)):
                               )
     radioButton.pack(anchor=W)
 
-
 window.mainloop()
