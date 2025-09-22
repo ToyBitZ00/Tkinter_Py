@@ -14,8 +14,11 @@ scale = Scale(window,
               orient=VERTICAL,  # VERTICAL or HORIZONTAL
               font=('Consolas', 20),
               tickinterval=10,  # Adds numeric indicators for value
-              showvalue=0,  # No longer shows the value when scrolling
-              troughcolor='#69EAFF'
+              # showvalue=0,  # No longer shows the value when scrolling
+              resolution=5,
+              troughcolor='#69EAFF',
+              fg='#FF1C00',
+              bg='#111111'
 
               )
 scale.pack()
