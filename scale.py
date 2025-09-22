@@ -7,6 +7,10 @@ def submit():
 
 window = Tk()
 
+fireImage = PhotoImage(file='fire.png')
+fireLabel = Label(window, image=fireImage)
+fireLabel.pack()
+
 scale = Scale(window,
               from_=100,
               to=0,
@@ -19,9 +23,12 @@ scale = Scale(window,
               troughcolor='#69EAFF',
               fg='#FF1C00',
               bg='#111111'
-
               )
 scale.pack()
+
+coldImage = PhotoImage(file='cold.png')
+coldLabel = Label(window, image=coldImage)
+coldLabel.pack()
 
 button = Button(window,
                 text=('Submit'),
